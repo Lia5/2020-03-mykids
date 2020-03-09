@@ -1,0 +1,28 @@
+.achievements {
+    padding: 100px 0 50px;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 60px;
+    }
+    &__item {
+        text-align: center;
+        max-width: 239px;
+        // margin-left: auto;
+        // margin-right: auto;
+        &:nth-child(1) {
+            max-width: 318px;
+        }
+        &:nth-child(2) {
+            max-width: 220px;
+        }
+    }
+    &__num {
+        font-weight: 800;
+        font-size: 65px;
+        line-height: 1;
+        color: $accent;
+        margin-bottom: 23px;
+    }
+}

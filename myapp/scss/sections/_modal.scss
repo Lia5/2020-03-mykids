@@ -1,0 +1,169 @@
+.modal {
+    max-height: 102vh;
+    overflow: auto;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(95, 55, 30, 0.6);
+    justify-content: center;
+    // align-items: center;
+    &__wrap {
+        max-width: 831px;
+        position: relative;
+        margin: auto;
+        @media only screen and (max-width: 620px) {
+            max-width: 100%;
+            width: 90%;
+        }   
+    }
+    &__body {
+      position: relative;
+      padding: 95px 400px 86px 100px;
+      background: #fff url('../img/bg-thanks.png') no-repeat;
+      background-position: bottom -280px right -460px;
+      border-radius: 10px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(0.97, 0.94);
+        pointer-events: none;
+        border: 1px solid $accent;
+        border-radius: 10px;
+        z-index: 1;
+        @media only screen and (max-width: 620px) {
+          transform: scale(0.96, 0.94);
+          
+        }
+        @media only screen and (max-width: 540px) {
+          transform: scale(0.95, 0.94);
+          
+        }
+        @media only screen and (max-width: 420px) {
+          transform: scale(0.94, 0.94);
+        }
+        @media only screen and (max-width: 379px) {
+          transform: scale(0.93, 0.94);
+        }
+      }
+      @media only screen and (max-width: 805px) {
+        padding: 95px 30vw 86px 40px;
+        background-size: 98vw;
+        background-position: bottom -34vw right -59vw;
+      }
+      @media only screen and (max-width: 500px) {
+        padding: 40px;
+        background: #fff;
+      }
+    }
+    &__title {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0 0 13px;
+      font-weight: 400;
+        @media only screen and (max-width: 620px) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+    }
+    &__subtitle {
+      font-size: 24px;
+      line-height: 28px;
+      color: $accent;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0;
+      text-align: left;
+      color: #5f5f5f;
+      @media only screen and (max-width: 620px) {
+        font-size: 11px;
+        line-height: 16px;
+      }
+      @media only screen and (max-width: 368px) {
+      }
+    }
+    &-open {
+        display: block;
+    }
+  }
+  .close {
+      position: absolute;
+      right: 34px;
+      top: 29px;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      svg {
+        fill: $accent;
+        width: 30px;
+        height: 30px;
+      }
+      &:hover {
+          opacity: .7;
+      }
+      @media only screen and (max-width: 670px) {
+        top: 17px;
+        right: 17px;
+        border-color: #000;
+      }
+  
+  }
+  
+  .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+  }
+  .disabled {
+      display: none !important;
+  }
+
+  @keyframes fadeOutUp {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+    
+  .fadeOutUp {
+    animation-name: fadeOutUp;
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInDown {
+    animation-name: fadeInDown;
+  }
+  //width modal
+  #modalForm .modal__wrap {
+    max-width: 439px;
+  }
+  

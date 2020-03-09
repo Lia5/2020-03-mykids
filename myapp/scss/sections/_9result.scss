@@ -1,0 +1,54 @@
+.result {
+    position: relative;
+    &:after {
+        content: "////////////////";
+        position: absolute;
+        bottom: -149px;
+        right: 190px;
+        color: #ff874c;
+        font-size: 101px;
+        height: 63px;
+        overflow: hidden;
+        font-weight: 800;
+        transform: skew(-27deg);
+        letter-spacing: -2px;
+    }
+    &:before {
+        content: "////////////////";
+        position: absolute;
+        bottom: -152px;
+        right: 62px;
+        height: 63px;
+        color: #405646;
+        overflow: hidden;
+        font-size: 129px;
+        font-weight: 800;
+        transform: skew(-27deg);
+        letter-spacing: -10px;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 25%;
+        text-align: center;
+    }
+    &__img {
+        width: 108px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__btn {
+        text-align: center;
+    }
+}

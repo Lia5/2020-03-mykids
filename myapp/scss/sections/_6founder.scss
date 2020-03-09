@@ -1,0 +1,115 @@
+.founder {
+    position: relative;
+    overflow: hidden;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        background: $accent;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: -25px;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        background: #f8f8ff;
+        z-index: -1;
+    }
+    &__wrap {
+        position: relative;
+        padding-bottom: 25px;
+        &:after {
+            content: "///////////////";
+            position: absolute;
+            top: 143px;
+            right: -149px;
+            color: #fad5c8;
+            font-size: 129px;
+            font-weight: 800;
+            transform: rotate(90deg) skew(-27deg);
+            letter-spacing: -10px;
+        }
+    }
+    .wrap {
+        display: flex;
+    }
+    &__video {
+        width: 36%;
+        display: flex;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -23px;
+            right: 0;
+            width: 837px;
+            height: 710px;
+            background: url('../img/about-bg.png');
+        }
+    }
+    &__link {
+        position: relative;
+        max-width: 240px;
+        margin: auto;
+        padding: 10px 10px 10px 80px;
+        color: #fff;
+        text-decoration: underline;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 67px;
+            height: 67px;
+            border-radius: 50%;
+            background: #fff;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 16px;
+            left: 24px;
+            width: 0;
+            height: 0;
+            border-left: 23px solid #eebc8a;
+            border-top: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+        }
+    }
+    &__body {
+        width: 64%;
+        padding: 10.5% 2% 7% 12.5%;
+        .title {
+            text-align: left;
+        }
+    }
+    &__subtitle {
+        font-size: 18px;
+        line-height: 45px;
+        margin-bottom: 60px;
+    }
+    &__item {
+        margin-bottom: 26px;
+        position: relative;
+            padding-left: 30px;
+            span {
+                font-weight: 700;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: $accent;
+            }
+    }
+
+}

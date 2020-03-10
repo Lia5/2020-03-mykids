@@ -1,5 +1,9 @@
 .packages {
     background: #f8f8ff;
+    padding: 128px 0 145px;
+    .title {
+        margin-bottom: 61px;
+    }
     &__items {
         display: flex;
         justify-content: space-between;
@@ -48,7 +52,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 5px;
+        padding: 30px;
         background: $accent;
         color: #fff;
         font-size: 18px;
@@ -63,7 +67,7 @@
         }
     }
     &__body {
-        padding: 5px;
+        padding: 19px 7% 53px;
     }
     &__top {
         text-align: center;
@@ -71,7 +75,7 @@
         line-height: 20px;
         color: rgba(51, 51, 51, 0.6);
         border-bottom: 1px solid $accent;
-        padding-bottom: 10px;
+        padding: 0 15px 15px;
         span {
             display: block;
             font-weight: 700;
@@ -81,17 +85,19 @@
         }
     }
     &__list {
-        padding-top: 30px;
+        padding-top: 44px;
         font-size: 18px;
         line-height: 22px;
+        margin-bottom: 47px;
         li {
             position: relative;
-            padding-left: 20px;
+            padding-left: 37px;
+            margin-bottom: 22px;
             &:before {
                 content: "";
                 position: absolute;
                 top: 6px;
-                left: 0;
+                left: 6px;
                 width: 8px;
                 height: 8px;
                 border-radius: 50%;
@@ -101,6 +107,9 @@
     }
     &__bottom {
         text-align: center;
+        .link {
+
+        }
     }
     &__price {
         &-old {
@@ -127,6 +136,15 @@
             font-size: 65px;
             line-height: 1;
             font-weight: 700;
+            margin-bottom: 30px;
+            &+.btn {
+                margin-bottom: 29px;
+            }
         }
+    }
+    .link {
+        padding: 0 10%;
+        margin-top: 53px;
+        margin-bottom: 55px;
     }
 }

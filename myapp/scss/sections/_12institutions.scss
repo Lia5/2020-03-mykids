@@ -1,5 +1,6 @@
 .institutions {
     position: relative;
+    padding: 132px 0 48px;
     &:before {
         content: "";
         position: absolute;
@@ -19,6 +20,28 @@
         height: 330px;
         background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff874c' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='2'/%3E%3Ccircle cx='13' cy='13' r='2'/%3E%3C/g%3E%3C/svg%3E");
         z-index: -1;
+    }
+    .title {
+        margin-bottom: 78px;
+    }
+    .wrap {
+        max-width: 1260px;
+    }
+    &__slider {
+        padding-right: 20%;
+        .owl-item {
+            min-height: 385px;
+            .institutions__item-wrap {
+                min-height: 385px;
+            }
+        }
+        &.owl-carousel .owl-item .institutions__link-img {
+            width: 30px;
+            margin-top: 20px;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
     }
     &__item-wrap {
         position: relative;
@@ -43,6 +66,7 @@
         }
     }
     &__item {
+        min-height: 385px;
         position: relative;
         background: #fff;
         display: flex;

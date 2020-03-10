@@ -2221,6 +2221,11 @@ button.btn a {
 
 .packages {
   background: #f8f8ff;
+  padding: 128px 0 145px;
+}
+
+.packages .title {
+  margin-bottom: 61px;
 }
 
 .packages__items {
@@ -2298,7 +2303,7 @@ button.btn a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px;
+  padding: 30px;
   background: #ff874c;
   color: #fff;
   font-size: 18px;
@@ -2315,7 +2320,7 @@ button.btn a {
 }
 
 .packages__body {
-  padding: 5px;
+  padding: 19px 7% 53px;
 }
 
 .packages__top {
@@ -2324,7 +2329,7 @@ button.btn a {
   line-height: 20px;
   color: rgba(51, 51, 51, 0.6);
   border-bottom: 1px solid #ff874c;
-  padding-bottom: 10px;
+  padding: 0 15px 15px;
 }
 
 .packages__top span {
@@ -2336,21 +2341,23 @@ button.btn a {
 }
 
 .packages__list {
-  padding-top: 30px;
+  padding-top: 44px;
   font-size: 18px;
   line-height: 22px;
+  margin-bottom: 47px;
 }
 
 .packages__list li {
   position: relative;
-  padding-left: 20px;
+  padding-left: 37px;
+  margin-bottom: 22px;
 }
 
 .packages__list li:before {
   content: "";
   position: absolute;
   top: 6px;
-  left: 0;
+  left: 6px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -2387,10 +2394,22 @@ button.btn a {
   font-size: 65px;
   line-height: 1;
   font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.packages__price-new + .btn {
+  margin-bottom: 29px;
+}
+
+.packages .link {
+  padding: 0 10%;
+  margin-top: 53px;
+  margin-bottom: 55px;
 }
 
 .institutions {
   position: relative;
+  padding: 132px 0 48px;
 }
 
 .institutions:before {
@@ -2413,6 +2432,35 @@ button.btn a {
   height: 330px;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff874c' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='2'/%3E%3Ccircle cx='13' cy='13' r='2'/%3E%3C/g%3E%3C/svg%3E");
   z-index: -1;
+}
+
+.institutions .title {
+  margin-bottom: 78px;
+}
+
+.institutions .wrap {
+  max-width: 1260px;
+}
+
+.institutions__slider {
+  padding-right: 20%;
+}
+
+.institutions__slider .owl-item {
+  min-height: 385px;
+}
+
+.institutions__slider .owl-item .institutions__item-wrap {
+  min-height: 385px;
+}
+
+.institutions__slider.owl-carousel .owl-item .institutions__link-img {
+  width: 30px;
+  margin-top: 20px;
+}
+
+.institutions__slider.owl-carousel .owl-item .institutions__link-img:hover {
+  opacity: 0.6;
 }
 
 .institutions__item-wrap {
@@ -2439,6 +2487,7 @@ button.btn a {
 }
 
 .institutions__item {
+  min-height: 385px;
   position: relative;
   background: #fff;
   display: -webkit-box;

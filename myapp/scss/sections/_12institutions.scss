@@ -2,6 +2,10 @@
     position: relative;
     padding: 132px 0 48px;
     overflow-x: hidden;
+
+    @media screen and (max-width: 890px) {
+        padding: 40px 0 0;
+    }
     &:before {
         content: "";
         position: absolute;
@@ -14,12 +18,27 @@
     }
     .title {
         margin-bottom: 78px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 35px;
+        }
     }
     .wrap {
         max-width: 1260px;
     }
     &__slider {
         padding-right: 20%;
+        @media screen and (max-width: 890px) {
+            padding-right: 0;
+        }
+        @media screen and (max-width: 767px) {
+            padding-right: 25%;
+        }
+        @media screen and (max-width: 500px) {
+            padding-right: 15%;
+        }
+        @media screen and (max-width: 450px) {
+            padding-right: 0;
+        }
         .owl-item {
             min-height: 385px;
             .institutions__item-wrap {
@@ -68,6 +87,9 @@
         background-position: bottom 40px right 40px;
         background-size: 73px 73px;
         z-index: 1;
+        @media screen and (max-width: 500px) {
+            padding: 20px;
+        }
        
     }
     &__title {

@@ -1,6 +1,10 @@
 .consult {
     background: #f9fbfc;
     padding: 105px 0 190px;
+
+    @media screen and (max-width: 890px) {
+        padding: 40px 0;
+    }
     &__body {
         display: flex;
     }

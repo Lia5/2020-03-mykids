@@ -3,6 +3,10 @@
     padding: 106px 0 83px;
     background: $accent;
     color: #fff;
+
+    @media screen and (max-width: 890px) {
+        padding: 40px 0;
+    }
     &:after {
         content: "////////////////";
         position: absolute;

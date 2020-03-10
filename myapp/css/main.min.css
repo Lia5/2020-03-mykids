@@ -2684,6 +2684,12 @@ button.btn a {
   padding: 150px 0 180px;
 }
 
+@media screen and (max-width: 890px) {
+  .result {
+    padding: 50px 0;
+  }
+}
+
 .result:after {
   content: "////////////////";
   position: absolute;
@@ -2702,6 +2708,12 @@ button.btn a {
   margin-bottom: 103px;
 }
 
+@media screen and (max-width: 890px) {
+  .result .title {
+    margin-bottom: 40px;
+  }
+}
+
 .result__items {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2713,15 +2725,52 @@ button.btn a {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 590px) {
+  .result__items {
+    margin-bottom: 30px;
+  }
+}
+
 .result__item {
   width: 25%;
   text-align: center;
   margin-bottom: 65px;
 }
 
+@media screen and (max-width: 1060px) {
+  .result__item {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .result__item {
+    width: 33%;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .result__item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .result__item {
+    width: 100%;
+  }
+}
+
 .result__img {
   width: 83px;
   margin: 0 auto 18px;
+}
+
+@media screen and (max-width: 890px) {
+  .result__img {
+    width: 60px;
+  }
 }
 
 .result__img img {
@@ -2731,6 +2780,13 @@ button.btn a {
 .result__text {
   font-size: 18px;
   line-height: 26px;
+}
+
+@media screen and (max-width: 1060px) {
+  .result__text {
+    font-size: 16px;
+    line-height: 1.2;
+  }
 }
 
 .result__text span {
@@ -2762,6 +2818,25 @@ button.btn a {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='2' cy='2' r='2'/%3E%3Ccircle cx='13' cy='13' r='2'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+@media screen and (max-width: 1900px) {
+  .cite:before {
+    width: 18vw;
+  }
+}
+
+@media screen and (max-width: 1608px) {
+  .cite:before {
+    height: 15%;
+  }
+}
+
+@media screen and (max-width: 509px) {
+  .cite:before {
+    height: 10%;
+    width: 58vw;
+  }
+}
+
 .cite:after {
   content: "////////////////";
   position: absolute;
@@ -2782,6 +2857,18 @@ button.btn a {
   padding: 0 14% 0 6%;
 }
 
+@media screen and (max-width: 1370px) {
+  .cite__body {
+    padding-left: 8vw;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .cite__body {
+    padding-right: 0;
+  }
+}
+
 .cite__title {
   position: relative;
   max-width: 700px;
@@ -2791,6 +2878,14 @@ button.btn a {
   font-style: italic;
   margin-bottom: 20px;
   z-index: 1;
+}
+
+@media screen and (max-width: 679px) {
+  .cite__title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
 }
 
 .cite__title:before {
@@ -2807,11 +2902,34 @@ button.btn a {
   z-index: -1;
 }
 
+@media screen and (max-width: 1370px) {
+  .cite__title:before {
+    top: -55px;
+    left: -84px;
+    width: 117px;
+    height: 114px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .cite__title:before {
+    left: -34px;
+  }
+}
+
 .cite__subtitle {
   font-size: 18px;
   line-height: 26px;
   font-style: italic;
   margin-bottom: 49px;
+}
+
+@media screen and (max-width: 679px) {
+  .cite__subtitle {
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+  }
 }
 
 .packages {

@@ -1,5 +1,6 @@
 .consult {
     background: #f9fbfc;
+    padding: 105px 0 190px;
     &__body {
         display: flex;
     }
@@ -11,37 +12,48 @@
         line-height: 45px;
         color: $accent;
         font-weight: 700;
+        margin-bottom: 20px;
     }
     &__subtitle {
         font-size: 18px;
         line-height: 24px;
         font-weight: 700;
         color: #405646;
+        max-width: 495px;
+        margin-bottom: 87px;
     }
     &__pic {
-        width: 40%;
+        width: 52%;
         position: relative;
         &-wrap {
             width: 100%;
             position: absolute;
             bottom: 0;
-            right: 0;
+            left: 27%;
             z-index: 1;
             &:before {
                 content: "";
                 position: absolute;
-                bottom: 0;
-                right: -20px;
-                width: 100%;
-                height: 120%;
+                bottom: -5%;
+                left: 45%;
+                width: 62%;
+                height: 91%;;
                 background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff874c' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='2'/%3E%3Ccircle cx='13' cy='13' r='2'/%3E%3C/g%3E%3C/svg%3E");
+                z-index: -1;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                top: -5%;
+                left: 45%;
+                width: 62%;
+                height: 50%;
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fdfcff' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='2'/%3E%3Ccircle cx='13' cy='13' r='2'/%3E%3C/g%3E%3C/svg%3E");
                 z-index: -1;
             }
         }
         img {
             max-width: 100%;
-            
-            
         }
     }
     input {
@@ -53,8 +65,12 @@
         margin-left: 20px;
     }
 }
+.form-line {
+    margin-bottom: 60px;
+}
 .form-line-wrap {
     display: flex;
+    align-items: center;
 }
 .agree-line {
     font-size: 14px;

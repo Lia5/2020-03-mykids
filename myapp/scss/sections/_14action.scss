@@ -1,12 +1,15 @@
 .action {
     position: relative;
+    padding: 106px 0 83px;
     background: $accent;
     color: #fff;
     &:after {
         content: "////////////////";
         position: absolute;
-        bottom: 0;
-        left: -57px;
+        bottom: -4px;
+        left: -106px;
+        height: 42px;
+        overflow: hidden;
         color: #fff;
         font-size: 129px;
         font-weight: 500;
@@ -14,5 +17,13 @@
         -ms-transform: skew(-27deg);
         transform: skew(-27deg);
         letter-spacing: -9px;
+    }
+    &__title {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+        font-style: italic;
+        max-width: 600px;
+        margin-bottom: 31px;
     }
 }

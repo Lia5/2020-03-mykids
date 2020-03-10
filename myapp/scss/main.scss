@@ -135,6 +135,7 @@ ul,li {
 }
 button.btn {
 	padding: 0;
+	border: none;
 	a {
 		color: #fff;
 		padding: 20px 45px;
@@ -181,6 +182,11 @@ button.btn {
 		border-radius: 50%;
 		border: 1px solid $accent;
 	}
+}
+.body-modal-open {
+	height: 100vh;
+	overflow: hidden;
+	padding-right: 17px;
 }
 
 @import "sections/header"; 

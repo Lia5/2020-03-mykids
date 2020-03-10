@@ -1,0 +1,23 @@
+section.consult
+    .wrap
+        .consult__body
+            .consult__form
+                form(action="")
+                    .consult__title Не розумієте, який саме формат співпраці з нами принесе вам максимум результату? 
+                    .consult__subtitle Залиште заявку прямо зараз та  отримайте безкоштовну приватну консультацію по телефону!
+                    .form.step-slide__form
+                        .form-line 
+                            label
+                                input(type="text" placeholder="Ім'я" name="name2" required).rfield.name-icon
+                            label
+                                input(type="text" placeholder="Телефон" name="phone" required).rfield.phone-mask
+                        .form-line-wrap
+                            button.btn.btn-finish(type="submit")
+                                    a(href="#modalKviz").modal-open.kviz__btn Оставить заявку
+                            .agree-line
+                                input#modal__agree(type='checkbox', checked='', disabled='')
+                                label(for='#modal__agree') Я даю згоду на обробку 
+                                    span персональних даних
+            .consult__pic
+                .consult__pic-wrap
+                    img(src="img/contacts-foto.jpg", alt="contacts-foto")

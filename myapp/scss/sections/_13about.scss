@@ -1,0 +1,22 @@
+.about {
+    &__title {
+        color: $accent;
+        font-size: 57px;
+        line-height: 35px;
+        font-weight: 700;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 30%;
+        margin-bottom: 40px;
+        .name {
+            margin-bottom: 10px;
+        }
+    }
+    &__text {
+
+    }
+}

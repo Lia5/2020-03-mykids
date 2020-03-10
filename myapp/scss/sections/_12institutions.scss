@@ -1,0 +1,93 @@
+.institutions {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 85%;
+        height: 60%;
+        background: #405646;
+        z-index: -1;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -228px;
+        right: 16%;
+        width: 318px;
+        height: 330px;
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff874c' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='2'/%3E%3Ccircle cx='13' cy='13' r='2'/%3E%3C/g%3E%3C/svg%3E");
+        z-index: -1;
+    }
+    &__item-wrap {
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid transparent;
+            z-index: -1;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            z-index: -1;
+        }
+        &:hover {
+            &:before {
+                border-color: $accent;
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 55px 45px;
+        box-shadow: 23px 0 27px 4px rgba(149, 149, 149, 0.36);
+        background: #fff url('../img/icons/commas-grey.svg') no-repeat;
+        background-position: bottom 40px right 40px;
+        background-size: 73px 73px;
+        z-index: 1;
+       
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 1;
+        color: $accent;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    &__subtitle {
+        font-size: 12px;
+        line-height: 16px;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 18px;
+        font-style: italic;
+        margin-bottom: auto;
+    }
+    &__link {
+        color: $accent;
+        text-decoration: underline;
+    }
+    &__link-img {
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+.owl-stage-outer {
+    padding-bottom: 30px;
+}

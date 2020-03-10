@@ -1,22 +1,24 @@
 .footer {
     padding: 30px 0 25px;
-    background: #f8fafb;
+    background: #f9fbfc;
     a {
         display: block;
+        text-decoration: underline;
     }
     &__item {
-        flex-grow: 2;
+        font-size: 14px;
+        line-height: 18px;
+
         @media screen and (max-width: 820px) {
-            width: 50%;
-            margin-bottom: 20px;
+
         }
         @media screen and (max-width: 580px) {
-            width: 100%;
-            text-align: center;
+
         }
     }
     &__bottom {
         display: flex;
+        justify-content: space-between;
         font-weight: 200;
         font-size: 12px;
         line-height: 16px;
@@ -30,39 +32,29 @@
         }
 
     }
-    &__logo {
-        display: inline-block;
-        width: 56px;
-        margin-left: 20px;
-        @media screen and (max-width: 580px) {
-            width: 41px;
-        }
-        &:hover {
-            opacity: 0.6;
-        }
+    // &__logo {
+    //     display: inline-block;
+    //     width: 56px;
+    //     margin-left: 20px;
+    //     @media screen and (max-width: 580px) {
+    //         width: 41px;
+    //     }
+    //     &:hover {
+    //         opacity: 0.6;
+    //     }
 
-        img {
-            width: 100%;
-        }
-    }
-    &__conf  {
-        display: flex;
-        align-items: center;
-        flex-grow: 1.1;
-        a {
-            @media screen and (max-width: 580px) {
-                width: 100%;
-            }
-            
-        }
-    }
-    &__dev {
-        display: flex;
-        align-items: center;
-        flex-grow: 1.1;
-        @media screen and (max-width: 580px) {
-            justify-content: center;
-        }
+    //     img {
+    //         width: 100%;
+    //     }
+    // }
+
+    // &__dev {
+    //     display: flex;
+    //     align-items: center;
+    //     flex-grow: 1.1;
+    //     @media screen and (max-width: 580px) {
+    //         justify-content: center;
+    //     }
         
-    }
+    // }
 }

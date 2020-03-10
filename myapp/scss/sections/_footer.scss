@@ -9,11 +9,17 @@
         font-size: 14px;
         line-height: 18px;
 
-        @media screen and (max-width: 820px) {
-
+        @media screen and (max-width: 878px) {
+            width: 25%;
+            padding-right: 10px;
         }
-        @media screen and (max-width: 580px) {
-
+        @media screen and (max-width: 653px) {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 480px) {
+            width: 100%;
+            text-align: center;
         }
     }
     &__bottom {
@@ -34,6 +40,9 @@
     }
     &__soc {
         display: flex;
+        @media screen and (max-width: 480px) {
+            justify-content: center;
+        }
         a+a {
             margin-left: 14px;
         }

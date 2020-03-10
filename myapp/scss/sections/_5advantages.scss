@@ -1,5 +1,8 @@
 .advantages {
     padding: 116px 0 144px;
+    @media screen and (max-width: 625px) {
+        padding-bottom: 40px;
+    }
     .title {
         margin-bottom: 64px;
         @media screen and (max-width: 625px) {

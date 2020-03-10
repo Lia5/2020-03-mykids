@@ -2087,38 +2087,25 @@ button.btn a {
 
 .result {
   position: relative;
+  padding: 150px 0 180px;
 }
 
 .result:after {
   content: "////////////////";
   position: absolute;
-  bottom: -149px;
-  right: 190px;
+  bottom: 23px;
+  right: 361px;
   color: #ff874c;
   font-size: 101px;
-  height: 63px;
-  overflow: hidden;
-  font-weight: 800;
+  font-weight: 600;
   -webkit-transform: skew(-27deg);
       -ms-transform: skew(-27deg);
           transform: skew(-27deg);
   letter-spacing: -2px;
 }
 
-.result:before {
-  content: "////////////////";
-  position: absolute;
-  bottom: -152px;
-  right: 62px;
-  height: 63px;
-  color: #405646;
-  overflow: hidden;
-  font-size: 129px;
-  font-weight: 800;
-  -webkit-transform: skew(-27deg);
-      -ms-transform: skew(-27deg);
-          transform: skew(-27deg);
-  letter-spacing: -10px;
+.result .title {
+  margin-bottom: 103px;
 }
 
 .result__items {
@@ -2129,16 +2116,18 @@ button.btn a {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .result__item {
   width: 25%;
   text-align: center;
+  margin-bottom: 65px;
 }
 
 .result__img {
-  width: 108px;
-  margin: 0 auto;
+  width: 83px;
+  margin: 0 auto 18px;
 }
 
 .result__img img {
@@ -2151,6 +2140,7 @@ button.btn a {
 }
 
 .result__text span {
+  display: block;
   font-weight: 700;
 }
 
@@ -2159,6 +2149,7 @@ button.btn a {
 }
 
 .cite {
+  padding: 106px 0 40px;
   position: relative;
   background: url("../img/cite-bg.jpg") no-repeat;
   background-position: center right;
@@ -2171,13 +2162,34 @@ button.btn a {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 328px;
-  height: 40%;
+  width: 438px;
+  height: 34%;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='2' cy='2' r='2'/%3E%3Ccircle cx='13' cy='13' r='2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.cite:after {
+  content: "////////////////";
+  position: absolute;
+  top: 0;
+  right: 11px;
+  height: 52px;
+  color: #405646;
+  overflow: hidden;
+  font-size: 129px;
+  font-weight: 600;
+  -webkit-transform: skew(-27deg);
+      -ms-transform: skew(-27deg);
+          transform: skew(-27deg);
+  letter-spacing: -10px;
+}
+
+.cite__body {
+  padding: 0 14% 0 6%;
 }
 
 .cite__title {
   position: relative;
+  max-width: 700px;
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
@@ -2189,10 +2201,10 @@ button.btn a {
 .cite__title:before {
   content: "";
   position: absolute;
-  top: -50px;
-  left: -100px;
+  top: -95px;
+  left: -164px;
   width: 217px;
-  height: 193px;
+  height: 214px;
   background: url("../img/icons/commas.svg") no-repeat;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -2204,7 +2216,7 @@ button.btn a {
   font-size: 18px;
   line-height: 26px;
   font-style: italic;
-  margin-bottom: 30px;
+  margin-bottom: 49px;
 }
 
 .packages {
@@ -2934,6 +2946,21 @@ button.btn a {
     font-size: 10px;
     line-height: 16px;
   }
+}
+
+.footer__soc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__soc a + a {
+  margin-left: 14px;
+}
+
+.footer__soc a:hover {
+  opacity: 0.6;
 }
 
 @media only screen and (max-width: 720px) {

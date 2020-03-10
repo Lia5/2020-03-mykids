@@ -32,6 +32,15 @@
         }
 
     }
+    &__soc {
+        display: flex;
+        a+a {
+            margin-left: 14px;
+        }
+        a:hover {
+            opacity: 0.6;
+        }
+    }
     // &__logo {
     //     display: inline-block;
     //     width: 56px;

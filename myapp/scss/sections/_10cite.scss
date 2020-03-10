@@ -1,4 +1,5 @@
 .cite {
+    padding: 106px 0 40px;
     position: relative;
     background: url('../img/cite-bg.jpg') no-repeat;
     background-position: center right;
@@ -9,12 +10,30 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 328px;
-        height: 40%;
+        width: 438px;
+        height: 34%;
         background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='2' cy='2' r='2'/%3E%3Ccircle cx='13' cy='13' r='2'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    &:after {
+        content: "////////////////";
+        position: absolute;
+        top: 0;
+        right: 11px;
+        height: 52px;
+        color: #405646;
+        overflow: hidden;
+        font-size: 129px;
+        font-weight: 600;
+        transform: skew(-27deg);
+        letter-spacing: -10px;
+    }
+    &__body {
+        padding: 0 14% 0 6%;
     }
     &__title {
         position: relative;
+        max-width: 700px;
         font-size: 24px;
         line-height: 36px;
         font-weight: 700;
@@ -24,10 +43,10 @@
         &:before {
             content: "";
             position: absolute;
-            top: -50px;
-            left: -100px;
+            top: -95px;
+            left: -164px;
             width: 217px;
-            height: 193px;
+            height: 214px;
             background: url('../img/icons/commas.svg') no-repeat;
             transform: rotate(180deg);
             z-index: -1;
@@ -37,6 +56,6 @@
         font-size: 18px;
         line-height: 26px;
         font-style: italic;
-        margin-bottom: 30px;
+        margin-bottom: 49px;
     }
 }

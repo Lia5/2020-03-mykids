@@ -2,6 +2,9 @@
     padding: 116px 0 144px;
     .title {
         margin-bottom: 64px;
+        @media screen and (max-width: 625px) {
+            margin-bottom: 25px;
+        }
     }
     &__items {
         display: flex;
@@ -11,6 +14,13 @@
     &__item {
         padding: 35px 22px;
         width: 33%;
+        @media screen and (max-width: 625px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 479px) {
+            width: 100%;
+            padding: 25px 20px;
+        }
     }
     &__icon {
         width: 80px;

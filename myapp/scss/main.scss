@@ -188,6 +188,11 @@ button.btn {
 	overflow: hidden;
 	padding-right: 17px;
 }
+.desctop-br {
+	@media screen and (max-width: 960px) {
+		display: none;
+	}
+}
 
 @import "sections/header"; 
 @import "sections/1home";

@@ -177,7 +177,9 @@ $(function() {
     // }
     //scrollto
     //click on form submit button - AMO
-    $('.kviz__btn').on('click', function(){
+    $('.kviz__btn').on('click', function(e){
+        e.preventDefault();
+        var btn = $(this);
         $($(this).parent().parent().parent()).each(function () {
             var form = $(this);
             form.find('.rfield').addClass('empty_field');
@@ -190,11 +192,20 @@ $(function() {
                 $(this).removeClass('empty_field');
 
                 if (!form.find('.empty_field').length) {
+                    var numModal = btn.attr('href');
+                    var modal =  $(numModal);
+                    var modalWrap = $('.modal__wrap');
+                    modalWrap.removeClass('fadeOutUp');
+                    modalWrap.addClass('fadeInDown');
+                    $('.modal').addClass('disabled');
+                    modal.removeClass('disabled');
+                    modal.addClass('flex');
+                    $('body').addClass('body-modal-open');
                 console.log('form');
-                form = $('.quizForm');
+                form2 = form.closest('form');
                 jQuery.ajax({
                     method: "POST",
-                    data: form.serialize(),
+                    data: form2.serialize(),
                     // url: quizAjax.url,
                     url: '../sendamo.php',
                     dataType: "json",
@@ -205,8 +216,8 @@ $(function() {
                         // }
                     }
                 });
-                $('.btn-finish a').attr('href', "#").removeClass('modal-open').removeClass('kviz__btn').css('pointer-events', 'none');
-                $('.btn-finish').css('opacity', '0.5').css('pointer-events', 'none');
+                $(this).attr('href', "#").removeClass('modal-open').removeClass('kviz__btn').css('pointer-events', 'none');
+                $(this).parent().css('opacity', '0.5').css('pointer-events', 'none');
                 }
                 // fbq('track', 'Lead');
 

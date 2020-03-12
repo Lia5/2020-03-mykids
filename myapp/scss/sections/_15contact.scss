@@ -54,7 +54,7 @@
         }
         
         @media screen and (max-width: 1115px) {
-            width: 30%;
+            width: 35%;
         }
         @media screen and (max-width: 579px) {
             width: 100%;
@@ -113,17 +113,6 @@
             max-width: 100%;
         }
     }
-    input {
-        background: #fff;
-        padding: 30px 25px;
-        border: none;
-        @media screen and (max-width: 1115px) {
-            padding: 15px 10px;
-        }
-    }
-    label+label {
-        margin-left: 20px;
-    }
 }
 .form-line {
     margin-bottom: 60px;
@@ -136,6 +125,9 @@
     align-items: center;
     @media screen and (max-width: 890px) {
         flex-wrap: wrap;
+    }
+    @media only screen and (max-width: 479px) {
+        justify-content: center;
     }
 }
 .agree-line {

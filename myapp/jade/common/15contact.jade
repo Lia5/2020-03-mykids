@@ -3,6 +3,7 @@ section.consult#consult
         .consult__body
             .consult__form
                 form(action="")
+                    input(type='hidden', name='info', value='Приватна консультація')
                     .consult__title Не розумієте, який саме<span class="desctop-br"><br></span> формат співпраці з нами принесе<span class="desctop-br"><br></span> вам максимум результату? 
                     .consult__subtitle Залиште заявку прямо зараз та  отримайте безкоштовну приватну консультацію по телефону!
                     .form.step-slide__form
@@ -13,7 +14,7 @@ section.consult#consult
                                 input(type="text" placeholder="Телефон" name="phone" required).rfield.phone-mask
                         .form-line-wrap
                             button.btn.btn-finish(type="submit")
-                                    a(href="#modalFinish").kviz__btn Подати заявку
+                                a(href="#modalFinish").kviz__btn Подати заявку
                             .agree-line
                                 input#modal__agree(type='checkbox', checked='', disabled='')
                                 label(for='#modal__agree') Я даю згоду на обробку 

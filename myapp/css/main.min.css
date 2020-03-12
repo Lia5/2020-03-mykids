@@ -864,7 +864,7 @@ body {
 }
 
 body input, body textarea {
-  border: #666 1px solid;
+  border: none;
   outline: none;
 }
 
@@ -874,6 +874,22 @@ body input:focus:required:invalid, body textarea:focus:required:invalid {
 
 body input:required:valid, body textarea:required:valid {
   border-color: green;
+}
+
+body input {
+  background: #fff;
+  padding: 30px 25px;
+  border: none;
+}
+
+@media screen and (max-width: 1115px) {
+  body input {
+    padding: 15px 10px;
+  }
+}
+
+body label + label {
+  margin-left: 20px;
 }
 
 .img-responsive {
@@ -1007,37 +1023,17 @@ button.btn a {
   opacity: 0.8;
 }
 
-.circle {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 1px solid #ff874c;
-  opacity: 0.1;
-}
-
-.circle:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
-  border-radius: 50%;
-  border: 1px solid #ff874c;
-}
-
-.circle:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: scale(2.2);
-      -ms-transform: scale(2.2);
-          transform: scale(2.2);
-  border-radius: 50%;
-  border: 1px solid #ff874c;
+@media only screen and (max-width: 479px) {
+  .form-line label {
+    display: block;
+  }
+  .form-line label input {
+    width: 100%;
+  }
+  .form-line label + label {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 .body-modal-open {
@@ -1194,6 +1190,12 @@ button.btn a {
       -ms-transform: skew(-27deg);
           transform: skew(-27deg);
   letter-spacing: -9px;
+}
+
+@media only screen and (max-width: 684px) {
+  .home__wrap:after {
+    content: none;
+  }
 }
 
 .home .wrap {
@@ -1354,6 +1356,13 @@ button.btn a {
   height: 199px;
   background: url("../img/dots2.png");
   z-index: -1;
+}
+
+@media only screen and (max-width: 684px) {
+  .home__column:before {
+    left: auto;
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -2147,6 +2156,12 @@ button.btn a {
 @media screen and (max-width: 1115px) {
   .how__sidebar:before {
     right: -30px;
+  }
+}
+
+@media only screen and (max-width: 684px) {
+  .how__sidebar:before {
+    right: 0;
   }
 }
 
@@ -3412,6 +3427,13 @@ button.btn a {
   }
 }
 
+@media screen and (max-width: 579px) {
+  .about__title {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+}
+
 .about__items {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3431,6 +3453,18 @@ button.btn a {
   .about__item {
     padding: 0 20px;
     margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 684px) {
+  .about__item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .about__item {
+    width: 100%;
   }
 }
 
@@ -3469,6 +3503,12 @@ button.btn a {
   -ms-transform: skew(-27deg);
   transform: skew(-27deg);
   letter-spacing: -9px;
+}
+
+@media only screen and (max-width: 684px) {
+  .action:after {
+    content: none;
+  }
 }
 
 .action__title {
@@ -3579,7 +3619,7 @@ button.btn a {
 
 @media screen and (max-width: 1115px) {
   .consult__pic {
-    width: 30%;
+    width: 35%;
   }
 }
 
@@ -3667,22 +3707,6 @@ button.btn a {
   max-width: 100%;
 }
 
-.consult input {
-  background: #fff;
-  padding: 30px 25px;
-  border: none;
-}
-
-@media screen and (max-width: 1115px) {
-  .consult input {
-    padding: 15px 10px;
-  }
-}
-
-.consult label + label {
-  margin-left: 20px;
-}
-
 .form-line {
   margin-bottom: 60px;
 }
@@ -3709,6 +3733,15 @@ button.btn a {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .form-line-wrap {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -3901,6 +3934,22 @@ input.empty_field {
   display: block;
 }
 
+.modal__maintitle {
+  font-size: 35px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 22px;
+  color: #ff874c;
+  font-weight: 700;
+}
+
+.modal__mainsubtitle {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 .close {
   position: absolute;
   right: -20px;
@@ -3933,11 +3982,18 @@ input.empty_field {
   opacity: .7;
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 1045px) {
   .close {
-    top: 17px;
+    top: 36px;
     right: 17px;
     border-color: #000;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .close {
+    top: 26px;
+    right: 6px;
   }
 }
 
@@ -4081,6 +4137,50 @@ input.empty_field {
 
 #modalFinish.modal .close svg {
   fill: #ff874c;
+}
+
+.packagesForm .modal__wrap {
+  width: 100%;
+  max-width: 613px;
+  text-align: center;
+}
+
+.packagesForm .form-line {
+  display: block;
+}
+
+.packagesForm .form-line label {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.packagesForm .form-line label + label {
+  margin-left: 0;
+}
+
+.packagesForm input {
+  min-width: 350px;
+  border: 1px solid #d1d1d1;
+}
+
+.packagesForm .form-line-wrap {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.packagesForm .modal__body {
+  padding: 75px 20px;
+}
+
+.packagesForm input.empty_field {
+  border: 1px solid red;
+}
+
+#policy .modal__mainsubtitle {
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .footer {

@@ -31,6 +31,10 @@
             margin-bottom: 60px;
             margin-left: 0;
         }
+        @media screen and (max-width: 579px) {
+            font-size: 42px;
+            line-height: 1.2;
+        }
     }
     &__items {
         display: flex;
@@ -42,6 +46,12 @@
         @media screen and (max-width: 960px) {
             padding: 0 20px;
             margin-bottom: 40px;
+        }
+        @media only screen and (max-width: 684px) {
+            width: 50%;
+        }
+        @media only screen and (max-width: 479px) {
+            width: 100%;
         }
         .name {
             margin-bottom: 10px;

@@ -49,6 +49,9 @@
             font-weight: 500;
             transform: skew(-27deg);
             letter-spacing: -9px;
+            @media only screen and (max-width: 684px) {
+                content: none;
+            }
         }
     }
     .wrap {
@@ -149,6 +152,10 @@
             height: 199px;
             background: url('../img/dots2.png');
             z-index: -1;
+            @media only screen and (max-width: 684px) {
+                left: auto;
+                right: 0;
+            }
             @media screen and (max-width: 580px) {
                 content: none;
             }

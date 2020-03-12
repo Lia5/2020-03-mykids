@@ -95,6 +95,20 @@
     &-open {
         display: block;
     }
+    &__maintitle {
+      font-size: 35px;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 22px;
+      color: $accent;
+      font-weight: 700;
+    }
+    &__mainsubtitle {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
   }
   .close {
       position: absolute;
@@ -115,10 +129,17 @@
       &:hover {
           opacity: .7;
       }
-      @media only screen and (max-width: 670px) {
-        top: 17px;
+      @media only screen and (max-width: 1045px) {
+        top: 36px;
         right: 17px;
         border-color: #000;
+        svg {
+          // fill: $accent;
+        }
+      }
+      @media only screen and (max-width: 620px) {
+        top: 26px;
+        right: 6px;
       }
   
   }
@@ -223,4 +244,40 @@
       }
     }
   }
-  
+.packagesForm {
+  .modal__wrap {
+    width: 100%;
+    max-width: 613px;
+    text-align: center;
+  }
+  .form-line {
+    display: block;
+    label {
+      display: block;
+      margin-bottom: 22px;
+      &+label {
+        margin-left: 0;
+      }
+    }
+  }
+  input {
+    min-width: 350px;
+    border: 1px solid #d1d1d1;
+  }
+  .form-line-wrap {
+    justify-content: center;
+  }
+  .modal__body {
+    padding: 75px 20px;
+  }
+
+  input.empty_field {
+    border: 1px solid red;
+  }
+}
+#policy {
+  .modal__mainsubtitle {
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+}

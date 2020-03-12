@@ -27,13 +27,13 @@
         margin-bottom: 105px;
         margin-left: -34px;
         letter-spacing: -1px;
-        @media screen and (max-width: 960px) {
+        @media screen and (max-width: 1270px) {
             margin-bottom: 60px;
             margin-left: 0;
+            line-height: 1.2;
         }
         @media screen and (max-width: 579px) {
             font-size: 42px;
-            line-height: 1.2;
         }
     }
     &__items {

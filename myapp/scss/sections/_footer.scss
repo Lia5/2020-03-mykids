@@ -50,21 +50,21 @@
             opacity: 0.6;
         }
     }
-    // &__logo {
-    //     display: inline-block;
-    //     width: 56px;
-    //     margin-left: 20px;
-    //     @media screen and (max-width: 580px) {
-    //         width: 41px;
-    //     }
-    //     &:hover {
-    //         opacity: 0.6;
-    //     }
+    .footer__logo {
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 580px) {
+            width: 41px;
+        }
+        &:hover {
+            opacity: 0.6;
+        }
 
-    //     img {
-    //         width: 100%;
-    //     }
-    // }
+        img {
+            width: 100%;
+        }
+    }
 
     // &__dev {
     //     display: flex;

@@ -134,7 +134,7 @@
         right: 17px;
         border-color: #000;
         svg {
-          // fill: $accent;
+          fill: $accent;
         }
       }
       @media only screen and (max-width: 620px) {
@@ -241,6 +241,19 @@
     .close {
       svg {
         fill: $accent;
+        @media only screen and (max-width: 1045px) {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  #packagesOwner,
+  #packageskouch {
+    .close {
+      svg {
+        @media only screen and (max-width: 1045px) {
+          fill: #fff;
+        }
       }
     }
   }

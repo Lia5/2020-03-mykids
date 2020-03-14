@@ -3,6 +3,11 @@ section.consult#consult
         .consult__body
             .consult__form
                 form(action="")
+                    input.utm_source.hidden(type='hidden', name='utm_source')
+                    input.utm_medium.hidden(type='hidden', name='utm_medium')
+                    input.utm_campaign.hidden(type='hidden', name='utm_campaign')
+                    input.utm_term.hidden(type='hidden', name='utm_term')
+                    input.utm_content.hidden(type='hidden', name='utm_content')
                     input(type='hidden', name='info', value='Приватна консультація')
                     .consult__title Не розумієте, який саме<span class="desctop-br"><br></span> формат співпраці з нами принесе<span class="desctop-br"><br></span> вам максимум результату? 
                     .consult__subtitle Залиште заявку прямо зараз та  отримайте безкоштовну приватну консультацію по телефону!

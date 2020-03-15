@@ -161,6 +161,7 @@ $(function() {
                     modal.addClass('flex');
                     $('body').addClass('body-modal-open');
                     console.log('form');
+                    fbq('track', 'Lead');
                     form2 = form.closest('form');
                     jQuery.ajax({
                         method: "POST",
@@ -175,11 +176,11 @@ $(function() {
                             // }
                         }
                     });
-                    $(this).attr('href', "#").removeClass('modal-open').removeClass('kviz__btn').css('pointer-events', 'none');
-                    $(this).parent().css('opacity', '0.5').css('pointer-events', 'none');
-                    fbq('track', 'Lead');
+                    console.log(btn);
+                    btn.attr('href', "#").removeClass('kviz__btn').css('pointer-events', 'none');
+                    btn.parent().css('opacity', '0.5').css('pointer-events', 'none');
+                    // fbq('track', 'Lead');
                     }
-                // fbq('track', 'Lead');
 
                 } else {}
             });

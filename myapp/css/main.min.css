@@ -4179,6 +4179,12 @@ input.empty_field {
   border: 1px solid #d1d1d1;
 }
 
+@media only screen and (max-width: 419px) {
+  .packagesForm input {
+    min-width: auto;
+  }
+}
+
 .packagesForm .form-line-wrap {
   -webkit-box-pack: center;
   -webkit-justify-content: center;

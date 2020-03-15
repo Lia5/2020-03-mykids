@@ -276,6 +276,9 @@
   input {
     min-width: 350px;
     border: 1px solid #d1d1d1;
+    @media only screen and (max-width: 419px) {
+      min-width: auto;
+    }
   }
   .form-line-wrap {
     justify-content: center;

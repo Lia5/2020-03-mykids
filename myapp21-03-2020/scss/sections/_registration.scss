@@ -1,0 +1,86 @@
+.registration {
+    &-page {
+        min-height: 100vh;
+    }
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('../img/registration-bg.png') no-repeat;
+    background-position: right bottom;
+    &>.wrap {
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        margin-top: auto;
+        background: transparent;
+    }
+    &__title {
+        font-size: 41px;
+        line-height: 61px;
+        color: $accent;
+        margin-bottom: 130px;
+        font-weight: 700;
+        text-align: center;
+        @media screen and (max-width: 880px) {
+            margin-bottom: 50px;
+        }
+        @media screen and (max-width: 479px) {
+            font-size: 35px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+    }
+    &__text {
+        display: flex;
+        font-size: 24px;
+        line-height: 1;
+        text-align: center;
+        @media screen and (max-width: 880px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        span {
+            color: $accent;
+            padding-left: 10px;
+            
+        }
+        &+.registration__text {
+            margin-top: 66px;
+            @media screen and (max-width: 479px) {
+                margin-top: 30px;
+            }
+        }
+        &-name {
+            margin-right: 60px;
+            @media screen and (max-width: 880px) {
+                margin-right: 0;
+            }
+        }
+    }
+    &__part {
+        @media screen and (max-width: 880px) {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+    &__btn {
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        background: #65b82d;
+        @media screen and (max-width: 580px) {
+            padding: 12px 15px;
+        }
+        img {
+            padding-left: 10px;
+        }
+    }
+}

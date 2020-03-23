@@ -1,0 +1,89 @@
+.whom {
+    padding: 72px 0 118px;
+    @media screen and (max-width: 1280px) {
+        padding: 0;
+    }
+    .wrap {
+        max-width: 1240px;
+        @media screen and (max-width: 1280px) {
+            max-width: 95%;
+        }
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 50px 0;
+        @media screen and (max-width: 679px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        position: relative;
+        max-width: 46%;
+        background: #fff;
+        padding: 6% 5% 3% 6%;
+        box-shadow: 23px 0 27px 4px rgba(149,149,149,.36);
+        // z-index: 1;
+        @media screen and (max-width: 959px) {
+            padding: 6% 4% 3% 4%;
+        }
+        @media screen and (max-width: 679px) {
+            max-width: none;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 28px;
+            left: 20px;
+            width: 100%;
+            height: 100%;
+            background-color: #faf8f7;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff874c' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='2'/%3E%3Ccircle cx='13' cy='13' r='2'/%3E%3C/g%3E%3C/svg%3E");
+            z-index: -1;
+        }
+    }
+    &__title {
+        font-size: 35px;
+        line-height: 40px;
+        color: $accent;
+        font-weight: 700;
+        margin-bottom: 40px;
+        @media screen and (max-width: 959px) {
+            font-size: 24px;
+            line-height: 1.52;
+            margin-bottom: 5px;
+        }
+    }
+    &__list {
+        padding: 0;
+        margin: 0;
+        li {
+            position: relative;
+            padding: 25px 20px 26px 0;
+            padding: 8px 0;
+            
+            &:before {
+                content: "";
+                position: absolute;
+                top: 27px;
+                left: -32px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: $accent;
+                @media screen and (max-width: 959px) {
+                    top: 16px;
+                    left: -19px;
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+            &+li {
+                border-top: 1px solid #e8e8e8;
+            }
+        }
+    }
+}
